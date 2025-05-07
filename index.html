@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <title>Course Home Page</title>
+</head>
+<body>
+  
+
+  <header>
+    <div class="name_cont">
+      <img src="images/image.jpg" alt="Omodunmolami" class="profile-img"/>
+      <h1>Omodunmolami Ojulari</h1>
+    </div>
+    <nav>
+      <a class="active" href="#">Home</a>
+      <a href="#">Chamber</a>
+      <a href="#">Final</a>
+      <a href="#">GitHub Profile</a>
+      <a href="#">LinkedIn</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <h2>Home</h2>
+      <section class="course-nigeria">
+        <div class="course-work">
+          <div class="h3">
+            <h3>Course Work</h3>
+          </div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="nigeria">
+          <div class="h3">
+            <h3>Nigeria, Ibadan</h3>
+          </div>
+          <img src="https://forestcenter.iita.org/wp-content/uploads/2017/03/1024_Tree-Heritage-Park-768x1024.jpg " alt="Ibadan Trees"/>
+          <p>Ibadan Trees</p>
+        </div>
+      </section>
+  
+      <section class="certificate-section">
+        <h3>Web and Computer Programming Certificate</h3>
+        <div class="filter-buttons">
+          <button onclick="filterCourses('all')">All</button>
+          <button onclick="filterCourses('CSE')">CSE</button>
+          <button onclick="filterCourses('WDD')">WDD</button>
+        </div>
+        <div class="course-buttons">
+          <button class="CSE brown">CSE 110</button>
+          <button class="WDD brown">WDD 130</button>
+          <button class="CSE brown">CSE 111</button>
+          <button class="CSE">CSE 210</button>
+          <button class="WDD brown">WDD 131</button>
+          <button class="WDD">WDD 231</button>
+        </div>
+      </section>
+    </main>
+  
+
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 <span id="currentyear"></span> 🌸 Omodunmolami Ojulari 🌸. Oyo sate, Nigeria</p>
+    <p>
+      Last Modification:
+      <span id="lastModified"></span>
+    </p>
+  </footer>
+
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>

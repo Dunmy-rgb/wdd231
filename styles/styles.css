@@ -1,0 +1,188 @@
+:root {
+  --header_color: #164e70;
+  --nav: #000611;
+  --primary: #184d70;
+  --font: Montserrat, Helvetica, sans-serif;
+  --nav_color: #636163;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: var(--header_color);
+  position: relative;
+  max-width: 870px;
+  margin: 5px auto 0 auto;
+  border-radius: 5px;
+}
+
+.name_cont {
+  color: var(--font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+
+.name_cont h1 {
+  text-align: center;
+}
+
+.profile-img {
+  position: absolute;
+  left: 160px;
+  top: 10px;
+  border-radius: 5px;
+  height: 83px;
+}
+
+nav {
+  margin-top: 10px;
+  background-color: var(--nav);
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+nav a.active {
+  color: #d4ff00;
+}
+
+.container {
+  width: 48%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+  background-color: #f5f3f3ef;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.course-nigeria {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+h2 {color: #27648a;}
+
+.h3 {
+  background-color: var(--primary);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+}
+
+.course-work > ul {
+  padding: 0 0 0 30px;
+}
+
+.course-work, .nigeria {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  width: 45%;
+  height: 250px;
+}
+
+.nigeria p {
+  text-align: center;
+}
+
+.nigeria img {
+
+  display: block;
+  margin: 5px auto 0 auto;
+  max-width: 34%;
+  height: auto;
+  
+}
+
+.toloria img {
+  width: 100%;
+  height: auto;
+}
+
+.certificate-section {
+  text-align: center;
+}
+
+.certificate-section > h3 {
+  background-color: #0f3b57;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.filter-buttons button {
+  margin: 5px;
+  padding: 8px 16px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.course-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.course-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.575);
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 190px;
+}
+
+.brown {
+  background-color: #8b3e2f;
+  color: white;
+}
+
+/* .WDD {
+  background-color: #e6edef;
+  color: black;
+} */
+
+footer {
+  width: 49%;
+  margin: 0 auto;
+  border-radius: 4px;
+  background-color: #174c76;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+
