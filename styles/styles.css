@@ -65,6 +65,22 @@ nav a.active {
   color: #d4ff00;
 }
 
+/* Hamburger button styles */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hide nav links by default on mobile */
+.nav-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .container {
   width: 48%;
   max-width: 960px;
@@ -169,11 +185,6 @@ h2 {color: #27648a;}
   color: white;
 }
 
-/* .WDD {
-  background-color: #e6edef;
-  color: black;
-} */
-
 footer {
   width: 49%;
   margin: 0 auto;
@@ -185,4 +196,82 @@ footer {
   font-size: 14px;
 }
 
+@media screen and (max-width: 600px) {
+  header,
+  .container,
+  footer {
+    width: 95%;
+    margin: 0 auto;
+  }
 
+  .name_cont {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .profile-img {
+    position: static;
+    margin-top: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  .course-nigeria {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .course-work,
+  .nigeria {
+    width: 90%;
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .nigeria img {
+    max-width: 80%;
+  }
+
+  .course-buttons button {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--nav);
+    width: 100%;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    border-top: 1px solid #444;
+  }
+
+  .hamburger {
+    display: block;
+    margin: auto;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav.show .nav-links {
+    display: flex;
+  }
+}
