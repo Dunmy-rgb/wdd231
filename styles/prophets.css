@@ -1,0 +1,66 @@
+/* Base styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+header, footer {
+  background-color: #2b3a42;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Grid container for prophet cards */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Auto-responsive */
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Each prophet card */
+section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+section:hover {
+  transform: scale(1.03);
+}
+
+/* Prophet name */
+#cards h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+/* Portrait image */
+section img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
