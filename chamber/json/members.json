@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Sahara Tech",
+    "address": "101 Desert Lane",
+    "phone": "223-555-1010",
+    "website": "https://saharatech.ml",
+    "image": "https://saharateck.com/wp-content/uploads/2023/02/Saharatech-logo2.png",
+    "membershipLevel": "Gold"
+  },
+  {
+    "name": "Timbuktu Tours",
+    "address": "202 Explorer Blvd",
+    "phone": "223-555-2020",
+    "website": "https://timbuktutours.ml",
+    "image": "https://www.youngpioneertours.com/wp-content/uploads/2020/02/timbuktu.jpg",
+    "membershipLevel": "Silver"
+  },
+  {
+    "name": "Nomad Cafe",
+    "address": "303 Coffee Rd",
+    "phone": "223-555-3030",
+    "website": "https://nomadcafe.ml",
+    "image": "https://static.wixstatic.com/media/1b7619_f073ce8c666543539f35b21327db3809~mv2.jpg/v1/fill/w_640,h_480,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1b7619_f073ce8c666543539f35b21327db3809~mv2.jpg",
+    "membershipLevel": "Bronze"
+  },
+  {
+    "name": "Mountain Gear Co.",
+    "tagline": "Adventure Begins Here",
+    "email": "contact@mountaingear.com",
+    "phone": "888-321-9876",
+    "url": "www.mountaingear.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrVzCC6Vq9AX84Xv0GrNljtoC87gwfHLUAw&s"
+  },
+  {
+    "name": "Sweet Tooth Bakery",
+    "tagline": "Delighting Your Taste Buds",
+    "email": "orders@sweettooth.com",
+    "phone": "877-654-3210",
+    "url": "www.sweettoothbakery.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt2wKDzTysktfqj61YyYxIbYgzvixntECsUA&s"
+  },
+  {
+    "name": "PixelWave Studios",
+    "tagline": "Designs That Inspire",
+    "email": "hello@pixelwave.com",
+    "phone": "866-444-5678",
+    "url": "www.pixelwave.io",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRWidhm31p791CpTLgHmyZutTH_vcoaF5HSw&s"
+  },
+  {
+    "name": "GreenLife Landscaping",
+    "tagline": "Beautify Your Outdoors",
+    "email": "info@greenlife.com",
+    "phone": "800-777-4422",
+    "url": "www.greenlifelandscaping.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiNO28x1bUjx8QeDgpKKo2XgM0wE018B-ktw&s"
+  },
+  {
+    "name": "Bright Minds Tutoring",
+    "tagline": "Learn. Grow. Succeed.",
+    "email": "support@brightminds.com",
+    "phone": "844-333-2244",
+    "url": "www.brightminds.edu",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwm6GCNMe3lfc9tsnpe7C7xQylLIs-fAWJkQ&s"
+  },
+  {
+    "name": "Fitness Forge Gym",
+    "tagline": "Strength for Life",
+    "email": "coach@fitnessforge.com",
+    "phone": "833-999-1000",
+    "url": "www.fitnessforge.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjL9p9NHTbMKQngEphzkaXCtL6FNDyAedIJg&s"
+  }
+]

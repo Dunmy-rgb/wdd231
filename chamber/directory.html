@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directory | Timbuktu Chamber</title>
+  <link rel="stylesheet" href="styles/home.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/header-logo.jpg" alt="Logo" width="50px" height="auto">
+        <div class="logo-text">
+          <h1>
+            Timbuktu
+            <p>Chamber of Commerce</p>
+          </h1>
+        </div>
+      </div>
+
+      <button id="hamburger">&#9776;</button>
+
+      <nav id="navMenu">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a class="active" href="directory.html">Directory</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Member Directory</h2>
+    <div class="toggle-buttons">
+      <button id="gridView">Grid View</button>
+      <button id="listView">List View</button>
+    </div>
+    <div id="directory" class="grid"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Timbuktu Chamber of Commerce | WDD231 | Your Name</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/directory.js"></script>
+</body>
+</html>
