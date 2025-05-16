@@ -43,10 +43,6 @@ function displayMembers(members) {
   });
 }
 
-const businesses = [
-  
-];
-
 const directory = document.getElementById("directory");
 
 function displayBusinesses(data) {
