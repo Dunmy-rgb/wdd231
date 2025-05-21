@@ -11,8 +11,8 @@ const sunrise = document.querySelector('#sunrise');
 const sunset = document.querySelector('#sunset');
 
 const apiKey = '1649af7731c6325d7ff2de9eb5eef6de';
-const lat = '49.75';
-const lon = '6.64';
+const lat = '7.37';
+const lon = '3.94';
 
 const weatherURL = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
 
