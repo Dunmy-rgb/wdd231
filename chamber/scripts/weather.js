@@ -1,3 +1,5 @@
+document.getElementById("lastModified").textContent = document.lastModified;
+
 // HTML elements in the document
 const weatherIcon = document.querySelector('#weather-icon');
 const currentTemp = document.querySelector('#current-temp');
