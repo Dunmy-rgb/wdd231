@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -21,19 +20,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&family=Share+Tech&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/home.css">
-
 
   <title>Directory | Timbuktu Chamber</title>
-
   <link rel="stylesheet" href="styles/home.css" />
-
 </head>
 <body>
   <header>
     <div class="header-container">
       <div class="logo">
-        <img src="images/header-logo.jpg" alt="Logo" width="630" height="630" class="h-logo-image">
+        <img src="images/header-logo.jpg" alt="Logo" width="50px" height="auto">
         <div class="logo-text">
           <h1>
             Timbuktu
@@ -46,17 +41,25 @@
 
       <nav id="navMenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="directory.html">Directory</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Join</a></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="active" href="directory.html">Directory</a>
+          </li>
+          <li>
+            <a href="#">Events</a>
+          </li>
+          <li>
+            <a href="#">Join</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <h1 class="main-title">Directory | Timbuktu Chamber</h1>
+    <h1 class="main-title">Timbuktu Chamber of Commerce</h1>
     <section class="hero">
       <img src="images/hero-image.jpg" alt="Scalable Hero Image">
       <button>Keynote Tickets</button>
@@ -71,35 +74,46 @@
 
       <div class="current-weather">
         <h3>Current Weather</h3>
-        <img src="images/weather-icon.jpg" alt="weather icon" width="100px" height="auto" class="weather-icon">
-        <p>75° F<br>Partly Cloudy<br>High: 85°, Low: 52°<br>Humidity: 34%<br>Sunrise: 7:30am<br>Sunset: 9:59pm</p>
+        <img id="weather-icon" src="" alt="" width="100px" height="auto" class="weather-icon">
+        <figure>
+          <p id="current-temp"></p>
+          <span id="condition"></span><br>
+          <span id="high"></span>, <span id="low"></span><br>
+          <span id="humidity"></span><br>
+          <span id="sunrise"></span><br>
+          <span id="sunset"></span>
+        </figure>
       </div>
+
       <div class="weather-forecast">
         <h3>Weather Forecast</h3>
-        <p>Today: <strong>90°F</strong><br>Wednesday: <strong>89°F</strong><br>Thursday: <strong>68°F</strong></p>
+        <p>Today: <strong>70°F</strong><br>Tuesday: <strong>67°F</strong><br>Monday: <strong>71°F</strong></p>
       </div>
     </section>
 
+    <h2>Businesses</h2>
+
     <section class="businesses">
       <div class="business-card">
-        <img src="images/MGc.jpg" alt="Mountain Gear image">
-        <h4>Mountain Gear Co.</h4>
-        <p>Adventure Begins Here</p>
-        <p><strong>Email:</strong> info@gmail.com<br><strong>Phone:</strong> 800-555-1234<br><strong>URL:</strong> www.mountaingear.com</p>
+        <img src="images/luna.jpg" alt="Luna Spa & Aromatics image">
+        <h4>Luna Spa & Aromatics</h4>
+        <p>Relax. Rejuvenate. Repeat.</p>
+        <p><strong>Email:</strong> contact@lunaspa.com<br><strong>Phone:</strong> 800-555-5678<br><strong>URL:</strong> www.lunaspa.com</p>
       </div>
       <div class="business-card">
-        <img src="images/STB.jpg" alt="Sweet Tooth image">
-        <h4>Sweet Tooth Bakery</h4>
-        <p>Delighting Your Taste Buds</p>
-        <p><strong>Email:</strong> info@gmail.com<br><strong>Phone:</strong> 800-555-1234<br><strong>URL:</strong> www.sweettoothbakery.com</p>
+        <img src="images/gym.jpg" alt="Fit & Fuel Gym image">
+        <h4>Fit & Fuel Gym</h4>
+        <p>Strength Starts Here</p>
+        <p><strong>Email:</strong> info@fitnfuel.com<br><strong>Phone:</strong> 800-555-6789<br><strong>URL:</strong> www.fitnfuelgym.com</p>
       </div>
       <div class="business-card">
-        <img src="images/PWS.jpg" alt="PixelWave">
-        <h4>PixelWave Studios</h4>
-        <p>Designs That Inspire</p>
-        <p><strong>Email:</strong> info@gmail.com<br><strong>Phone:</strong> 800-555-1234<br><strong>URL:</strong> www.pixelwave.io</p>
+        <img src="images/velux.jpg" alt="VeloLux Bicycles image">
+        <h4>VeloLux Bicycles</h4>
+        <p>Ride the Future</p>
+        <p><strong>Email:</strong> sales@velolux.com<br><strong>Phone:</strong> 800-555-7890<br><strong>URL:</strong> www.veloluxcycles.com</p>
       </div>
     </section>
+
   </main>
 
   <footer>
@@ -121,7 +135,10 @@
       &copy; 20xx Timbuktu Chamber of Commerce<br>
       Last Modification: <span id="lastModified"></span></p>
     </div>
-    <script src="scripts/directory.js" defer></script>
+    <p>&copy; 2025 Timbuktu Chamber of Commerce | WDD231 | Your Name</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
+
+  <script src="scripts/weather.js" defer></script>
 </body>
 </html>

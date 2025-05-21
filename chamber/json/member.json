@@ -1,0 +1,20 @@
+{
+  "members": [
+    {
+      "name": "Gold Tech Co",
+      "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7_cludlJeNzdFOsvjd_ue3gVEsR-tpqyyBg&s",
+      "phone": "555-1234",
+      "address": "123 Main St, Anytown",
+      "website": "https://goldtech.example.com",
+      "membership": "Gold"
+    },
+    {
+      "name": "Silver Solutions",
+      "logo": "https://i0.wp.com/silverstreammed.com/wp-content/uploads/2022/07/3-new-logo-SS.jpg?resize=826%2C720&ssl=1",
+      "phone": "555-5678",
+      "address": "456 Oak Ave, Anytown",
+      "website": "https://silversolutions.example.com",
+      "membership": "Silver"
+    }
+  ]
+}

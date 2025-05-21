@@ -88,6 +88,19 @@ nav a:hover {
   height: auto;
 }
 
+.cta {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.spotlight-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
 .hero button {
   position: absolute;
   right: 10%;
@@ -247,6 +260,12 @@ footer {
 
 #twitter, #linkedin, #youtube {
   border-radius: 7px;
+}
+
+@media screen and (min-width: 768px) {
+  .spotlight-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -41,10 +41,18 @@
 
       <nav id="navMenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="directory.html">Directory</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Join</a></li>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="active" href="directory.html">Directory</a>
+          </li>
+          <li>
+            <a href="#">Events</a>
+          </li>
+          <li>
+            <a href="#">Join</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -52,6 +60,49 @@
 
   <main>
     <h1 class="main-title">Timbuktu Chamber of Commerce</h1>
+    <section class="hero">
+      <img src="images/hero-image.jpg" alt="Scalable Hero Image">
+      <button>Keynote Tickets</button>
+    </section>
+    <h2>Home</h2>
+
+    <section class="info-sections">
+      <div class="events">
+        <h3>Events</h3>
+        <p></p>
+      </div>
+
+      <div class="current-weather">
+        <h3>Current Weather</h3>
+        <img src="images/weather-icon.jpg" alt="weather icon" width="100px" height="auto" class="weather-icon">
+        <p>75° F<br>Partly Cloudy<br>High: 85°, Low: 52°<br>Humidity: 34%<br>Sunrise: 7:30am<br>Sunset: 9:59pm</p>
+      </div>
+      <div class="weather-forecast">
+        <h3>Weather Forecast</h3>
+        <p>Today: <strong>90°F</strong><br>Wednesday: <strong>89°F</strong><br>Thursday: <strong>68°F</strong></p>
+      </div>
+    </section>
+
+    <section class="businesses">
+      <div class="business-card">
+        <img src="images/MGc.jpg" alt="Mountain Gear image">
+        <h4>Mountain Gear Co.</h4>
+        <p>Adventure Begins Here</p>
+        <p><strong>Email:</strong> info@gmail.com<br><strong>Phone:</strong> 800-555-1234<br><strong>URL:</strong> www.mountaingear.com</p>
+      </div>
+      <div class="business-card">
+        <img src="images/STB.jpg" alt="Sweet Tooth image">
+        <h4>Sweet Tooth Bakery</h4>
+        <p>Delighting Your Taste Buds</p>
+        <p><strong>Email:</strong> info@gmail.com<br><strong>Phone:</strong> 800-555-1234<br><strong>URL:</strong> www.sweettoothbakery.com</p>
+      </div>
+      <div class="business-card">
+        <img src="images/PWS.jpg" alt="PixelWave">
+        <h4>PixelWave Studios</h4>
+        <p>Designs That Inspire</p>
+        <p><strong>Email:</strong> info@gmail.com<br><strong>Phone:</strong> 800-555-1234<br><strong>URL:</strong> www.pixelwave.io</p>
+      </div>
+    </section>
     <h2>Member Directory</h2>
     <div class="toggle-buttons">
       <button id="gridView">Grid View</button>
@@ -61,10 +112,29 @@
   </main>
 
   <footer>
+    <div class="footer-contact">
+      <p><strong>Timbuktu Chamber of Commerce</strong><br>
+      10 Rue De La Paix<br>
+      Timbuktu, Mali 999<br>
+      info@timbuktucc.org<br>
+      (223) 555-2300</p>
+    </div>
+    <div class="social-icons">
+      <img src="images/youtube.jpg" alt="YouTube" id="youtube">
+      <img src="images/twitter.png" alt="Twitter" id="twitter">
+      <img src="images/linkedin.png" alt="LinkedIn" id="linkedin">
+    </div>
+    <div class="footer-meta">
+      <p>WDD231 Class Project<br>
+      Omodunmolami Ojulari<br>
+      &copy; 20xx Timbuktu Chamber of Commerce<br>
+      Last Modification: <span id="lastModified"></span></p>
+    </div>
     <p>&copy; 2025 Timbuktu Chamber of Commerce | WDD231 | Your Name</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
   <script src="scripts/directory.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
 </body>
 </html>
