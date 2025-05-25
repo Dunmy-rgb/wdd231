@@ -14,7 +14,7 @@ const apiKey = '1649af7731c6325d7ff2de9eb5eef6de';
 const lat = '7.37';
 const lon = '3.94';
 
-const weatherURL = `//api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
+const weatherURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
 
 async function apiFetch() {
   try {
@@ -49,8 +49,10 @@ function displayResults(data) {
   sunset.innerHTML = `Sunset: ${formatTime(data.sys.sunset)}`;
   
   const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  weatherIcon.setAttribute('SRC', iconsrc);
+  weatherIcon.setAttribute('src', iconsrc);
   weatherIcon.setAttribute('alt', data.weather[0].description);
+  weatherIcon.setAttribute('width', '100');
+  weatherIcon.setAttribute('height', '100');
 }
 
 apiFetch();

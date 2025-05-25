@@ -4,10 +4,20 @@
   box-sizing: border-box;
 }
 
+a:focus, button:focus {
+  outline: 3px solid #007acc;
+  outline-offset: 2px;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
   color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 header, main {
@@ -21,7 +31,7 @@ header, main {
   flex-wrap: wrap;
   width: 100%;
   padding: 0.5rem;
-  background-color: #cbc9c9c1;
+ background-color: rgba(203, 201, 201, 0.76);
 }
 
 .h-logo-image {
@@ -94,12 +104,6 @@ nav a:hover {
   left: 50%;
   transform: translateX(-50%);
 }
-
-/* .spotlight-cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-} */
 
 .spotlight-cards {
   display: grid;
@@ -244,6 +248,7 @@ footer {
 
 .social-icons img {
   width: 32px;
+  height: auto;
   margin: 0 0.5rem;
 }
 
@@ -364,5 +369,14 @@ footer {
     padding: 1rem;
     gap: 1rem;
     background-color: #9bb2bd;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
 }

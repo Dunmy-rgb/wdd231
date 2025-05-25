@@ -5,7 +5,7 @@
       "address": "12 Tranquil Way",
       "phone": "555-123-4567",
       "website": "https://aurorawellnessspa.com",
-      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/227595008.jpg?k=10153e59178367ab269cc7e8630ac1d5c08a1008d075e57e078d0fbafc9331f0&o=&hp=1",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/227594982.jpg?k=b0ee66677d2611a91eb50eba4717d71e0e9dcecc2d5e3718172afdce6485f1bc&o=&hp=1",
       "membershipLevel": "Gold",
       "tagline": "Refresh. Rejuvenate. Rebalance."
     },
@@ -35,51 +35,6 @@
       "image": "https://images.unsplash.com/photo-1555685812-4b943f1cb0eb",
       "membershipLevel": "Gold",
       "tagline": "Rescue. Love. Repeat."
-    },
-    {
-      "name": "EchoEdge Recording Studio",
-      "address": "9 Harmony Avenue",
-      "phone": "555-303-4455",
-      "website": "https://echoedge.studio",
-      "image": "https://images.unsplash.com/photo-1511376777868-611b54f68947",
-      "membershipLevel": "Silver",
-      "tagline": "Your Sound, Perfected"
-    },
-    {
-      "name": "TerraBloom Florists",
-      "address": "67 Garden Crescent",
-      "phone": "555-222-8888",
-      "website": "https://terrabloomflowers.com",
-      "image": "https://images.unsplash.com/photo-1493244040629-496f6d136cc3",
-      "membershipLevel": "Bronze",
-      "tagline": "Flourishing Moments Delivered"
-    },
-    {
-      "name": "NorthWind Outfitters",
-      "address": "78 Trailhead Parkway",
-      "phone": "555-999-3030",
-      "website": "https://northwindgear.com",
-      "image": "https://images.unsplash.com/photo-1504274066651-8d31a536b11a",
-      "membershipLevel": "Gold",
-      "tagline": "Gear Up for the Wild"
-    },
-    {
-      "name": "Nimbus Coding Academy",
-      "address": "102 Code Street",
-      "phone": "555-515-9090",
-      "website": "https://nimbuscoding.com",
-      "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998",
-      "membershipLevel": "Silver",
-      "tagline": "From Beginner to Builder"
-    },
-    {
-      "name": "Velvet Canvas Gallery",
-      "address": "49 Artisan Row",
-      "phone": "555-777-1212",
-      "website": "https://velvetcanvas.art",
-      "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f",
-      "membershipLevel": "Bronze",
-      "tagline": "Where Art Lives and Breathes"
     }
   ]
 }
