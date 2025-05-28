@@ -1,0 +1,189 @@
+
+/* Container */
+.join-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f5f8fa;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  font-family: 'Lato', sans-serif;
+}
+
+/* Form headings */
+.join-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #003366;
+}
+
+/* Labels and inputs */
+.join-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-top: 0.3rem;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.join-form input[type="text"]:focus,
+.join-form input[type="email"]:focus,
+.join-form input[type="tel"]:focus,
+.join-form textarea:focus {
+  outline: none;
+  border-color: #0077cc;
+  box-shadow: 0 0 5px #0077cc;
+}
+
+/* Textarea height */
+.join-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Membership radio group */
+.join-form fieldset {
+  border: none;
+  margin: 1rem 0;
+  padding: 0;
+  font-weight: 600;
+  color: #003366;
+}
+
+.join-form fieldset legend {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.join-form fieldset label {
+  font-weight: normal;
+  display: inline-block;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+.join-form input[type="radio"] {
+  margin-right: 0.3rem;
+}
+
+/* Submit button */
+.join-form input[type="submit"] {
+  display: block;
+  width: 100%;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.join-form input[type="submit"]:hover,
+.join-form input[type="submit"]:focus {
+  background-color: #005fa3;
+  outline: none;
+}
+
+
+.membership-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #0077cc;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+dialog.membership-modal {
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  background: white;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+  .membership-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .membership-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex: 1;
+    margin: 0 1rem;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
