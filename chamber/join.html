@@ -22,7 +22,7 @@
 
   <title>Become a Member | Timbuktu Chamber</title>
 
-  <link rel="stylesheet" href="styles/home.css" />
+  <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/join.css">
 </head>
 <body>
@@ -96,23 +96,35 @@
             title="Enter your organization name" />
         </label>
 
-        <!-- Membership Level (Radio Buttons) -->
-        <fieldset>
-          <legend>Membership Level:</legend>
 
-          <label>
-            <input type="radio" name="membership" value="NP" required> NP
-          </label><br />
-          <label>
-            <input type="radio" name="membership" value="Bronze"> Bronze
-          </label><br />
-          <label>
-            <input type="radio" name="membership" value="Silver"> Silver
-          </label><br />
-          <label>
-            <input type="radio" name="membership" value="Gold"> Gold
-          </label>
-        </fieldset>
+        <fieldset>
+        <legend>Membership Level</legend>
+        <p>Click a membership level for details:</p>
+        <div class="membership-cards">
+          <div class="card bronze">
+            <h4>Bronze</h4>
+            <p>Social media mentions, workshop invites</p>
+            <button type="button" data-modal="modal-bronze">More Info</button>
+          </div>
+          <div class="card silver">
+            <h4>Silver</h4>
+            <p>Bronze + event discounts and featured listings</p>
+            <button type="button" data-modal="modal-silver">More Info</button>
+          </div>
+          <div class="card gold">
+            <h4>Gold</h4>
+            <p>Silver + homepage features and newsletter ads</p>
+            <button type="button" data-modal="modal-gold">More Info</button>
+          </div>
+          <div class="card np">
+            <h4>NP (Non-Profit)</h4>
+            <p>Basic benefits, limited advertising</p>
+            <button type="button" data-modal="modal-np">More Info</button>
+          </div>
+        </div>
+        <input type="hidden" id="membership-level" name="membership-level" />
+        <p id="selected-level-display" style="font-weight: bold; color: green;"></p>
+      </fieldset>
 
         <!-- Business Description -->
         <label>Business Description:
@@ -151,38 +163,43 @@
     <div class="footer-meta">
       <p>WDD231 Class Project<br>
       Omodunmolami Ojulari<br>
-      &copy; 20xx Timbuktu Chamber of Commerce<br>
+      </p><br>
     </div>
     <p>&copy; 2025 Timbuktu Chamber of Commerce | WDD231 | Omodunmolami Ojulari</p>
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <dialog id="modal-np" class="membership-modal">
-    <button class="close-btn">❌</button>
-    <h2>Non-Profit Membership</h2>
-    <p>Basic listing in directory, access to events, and limited support.</p>
-  </dialog>
-
   <dialog id="modal-bronze" class="membership-modal">
     <button class="close-btn">❌</button>
     <h2>Bronze Membership</h2>
-    <p>All NP benefits + social media mentions, and quarterly workshops.</p>
+    <p>All NP benefits + social media mentions and quarterly workshops.</p>
+    <button class="select-level" data-level="Bronze">Select This Level</button>
   </dialog>
 
   <dialog id="modal-silver" class="membership-modal">
     <button class="close-btn">❌</button>
     <h2>Silver Membership</h2>
-    <p>All Bronze benefits + featured listings and priority support.</p>
+    <p>All Bronze benefits + event discounts and featured directory listings.</p>
+    <button class="select-level" data-level="Silver">Select This Level</button>
   </dialog>
 
   <dialog id="modal-gold" class="membership-modal">
     <button class="close-btn">❌</button>
     <h2>Gold Membership</h2>
-    <p>All Silver benefits + homepage banner, custom promotions, and full support.</p>
+    <p>All Silver benefits + homepage features and newsletter ads.</p>
+    <button class="select-level" data-level="Gold">Select This Level</button>
+  </dialog>
+
+  <dialog id="modal-np" class="membership-modal">
+    <button class="close-btn">❌</button>
+    <h2>Non-Profit Membership</h2>
+    <p>Basic listing, limited promotion, and free community event access.</p>
+    <button class="select-level" data-level="NP">Select This Level</button>
   </dialog>
 
 
-  <script src="scripts/join.js" defer></script>
 
+  <script src="scripts/join.js" defer></script>
+  
 </body>
 </html>
