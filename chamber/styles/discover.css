@@ -35,6 +35,22 @@
   margin: 0.5rem 0;
 }
 
+img {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: auto;
+}
+
+.h-logo-image {
+  width: 50px;
+  height: auto;
+}
+
+footer {
+  min-height: 120px;
+  overflow: hidden;
+}
+
 /* Medium and up: grid layout inside card */
 @media (min-width: 600px) {
   .card {
