@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         card.innerHTML = `
           <figure>
-            <img src="${item.image}" alt="${item.title}" width="300" height="200" loading="lazy">
+            <img src="${item.image}" alt="${item.title}" width="300" height="200" loading="eager">
           </figure>
           <div class="card-content">
             <h2>${item.title}</h2>
