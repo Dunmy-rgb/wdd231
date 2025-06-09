@@ -1,6 +1,14 @@
 // Last modified date
 document.getElementById("lastModified").textContent = document.lastModified;
 
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+  hamburger.classList.toggle("open");
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   const cardsContainer = document.getElementById('cards-container');
   const visitMessage = document.getElementById('visit-message');
