@@ -1,0 +1,65 @@
+/* .discover-grid {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "image"
+    "address"
+    "description";
+  gap: 1rem;
+  padding: 1rem;
+} */
+
+.discover-grid {
+  margin: 1rem 8px;
+  background-color: #f4f4f4;
+  border: 1px solid #999;
+  overflow: hidden;
+  
+  border-radius: 8px;
+  display: grid;
+  grid-template-areas:
+  "title"
+  "image"
+  "address"
+  "description";
+}
+
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@media only screen and (min-width: 38rem) {
+
+  .discover-grid {
+    border-radius: 8px;
+    display: grid;
+    grid-template-areas:
+    "image title"
+    "image description"
+    "image address";
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Hover effect for medium and large screens */
+@media (min-width: 641px) {
+  .card img:hover {
+    filter: brightness(0.9);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+}

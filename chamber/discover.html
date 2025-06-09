@@ -23,6 +23,7 @@
 
   <title>Directory | Timbuktu Chamber</title>
   <link rel="stylesheet" href="styles/home.css" />
+  <link rel="stylesheet" href="styles/discover.css">
 </head>
 <body>
   <header>
@@ -59,44 +60,11 @@
     </div>
   </header>
 
-  <main>
-    <h1 class="main-title">Directory | Timbuktu Chamber</h1>
-    <section class="hero">
-      <img src="images/hero-image.jpg" alt="Scalable Hero Image">
-      <button>Keynote Tickets</button>
+  <main class="discover-grid">
+    <aside id="visit-message" class="sidebar"></aside>
+    <section id="cards-container" class="cards-grid">
+      
     </section>
-    <h2>Home</h2>
-
-    <section class="info-sections">
-      <div class="events">
-        <h3>Events</h3>
-        <p></p>
-      </div>
-
-      <div class="current-weather">
-        <h3>Current Weather</h3>
-        <img id="weather-icon" src="" alt="" width="100px" height="auto" class="weather-icon" loading="lazy">
-        <figure>
-          <p id="current-temp"></p>
-          <span id="condition"></span><br>
-          <span id="high"></span>, <span id="low"></span><br>
-          <span id="humidity"></span><br>
-          <span id="sunrise"></span><br>
-          <span id="sunset"></span>
-        </figure>
-      </div>
-
-      <div class="weather-forecast">
-        <h3>Weather Forecast</h3>
-        <p>Today: <strong>70°F</strong><br>Tuesday: <strong>67°F</strong><br>Monday: <strong>71°F</strong></p>
-      </div>
-    </section>
-
-    <section class="spotlight-section">
-      <h2>Members Spotlight</h2>
-      <div class="spotlight-cards" id="spotlight-container"></div>
-    </section>
-
   </main>
 
   <footer>
@@ -126,8 +94,7 @@
     <p>Last Modified: <span id="lastModified"></span></p>
   </footer>
 
-  <script src="scripts/weather.js" defer></script>
-  <script src="scripts/spotlight.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
 
 </body>
 </html>
