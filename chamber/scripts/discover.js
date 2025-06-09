@@ -1,15 +1,12 @@
+// Last modified date
+document.getElementById("lastModified").textContent = document.lastModified;
+
 document.addEventListener('DOMContentLoaded', () => {
   const cardsContainer = document.getElementById('cards-container');
   const visitMessage = document.getElementById('visit-message');
-  const lastModifiedEl = document.getElementById('lastModified');
   const STORAGE_KEY = 'discoverLastVisit';
 
-  // Show last modified date
-  if (lastModifiedEl) {
-    lastModifiedEl.textContent = document.lastModified;
-  }
-
-  // Display visit message based on last visit
+  // Show last visit message
   function showVisitMessage() {
     const now = Date.now();
     const lastVisit = localStorage.getItem(STORAGE_KEY);
@@ -30,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem(STORAGE_KEY, now.toString());
   }
 
-  // Load and display business/discovery cards from JSON
+  // Fetch JSON data and build cards
   async function loadCards() {
     try {
       const response = await fetch('json/discover.json');
@@ -41,25 +38,25 @@ document.addEventListener('DOMContentLoaded', () => {
         card.classList.add('card');
 
         card.innerHTML = `
-          <h2>${item.title}</h2>
           <figure>
-            <img src="${item.image}" alt="${item.title}" loading="lazy" width="300" height="200">
-            <figcaption>${item.title}</figcaption>
+            <img src="${item.image}" alt="${item.title}" loading="lazy">
           </figure>
-          <address>${item.address}</address>
-          <p>${item.description}</p>
-          <button type="button" aria-label="Learn more about ${item.title}">Learn More</button>
+          <div class="card-content">
+            <h2>${item.title}</h2>
+            <address>${item.address}</address>
+            <p>${item.description}</p>
+            <button type="button" aria-label="Learn more about ${item.title}">Learn More</button>
+          </div>
         `;
 
         cardsContainer.appendChild(card);
       });
     } catch (err) {
-      cardsContainer.innerHTML = '<p class="error">Failed to load cards. Please try again later.</p>';
-      console.error('Error loading discover.json:', err);
+      cardsContainer.textContent = 'Failed to load items.';
+      console.error(err);
     }
   }
 
-  // Init
   showVisitMessage();
   loadCards();
 });

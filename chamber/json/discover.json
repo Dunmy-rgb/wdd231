@@ -2,49 +2,50 @@
   {
     "title": "Historic Town Hall",
     "image": "images/View_of_the_Town_Hall.webp",
-    "address": "123 Main St, YourCity, State",
+    "address": "10 Rue de l’Indépendance, Timbuktu, Mali",
     "description": "Built in 1890, the Town Hall is a landmark showcasing Victorian architecture."
   },
   {
     "title": "Old Mill Bridge",
     "image": "images/old-mill-bridge.webp",
-    "address": "456 River Rd, YourCity, State",
+    "address": "Barrage Road, Near Niger River, Timbuktu, Mali",
     "description": "This 19th-century bridge once supported the bustling mill industry in the region."
   },
   {
     "title": "Founders Park",
     "image": "images/Founders-Park-Signage.webp",
-    "address": "789 Heritage Ln, YourCity, State",
+    "address": "Avenue de la Paix, Timbuktu, Mali",
     "description": "A peaceful park established to commemorate the founding families of the town."
   },
   {
     "title": "Liberty Clock Tower",
     "image": "images/liberty-clock.webp",
-    "address": "101 Liberty Ave, YourCity, State",
+    "address": "Place de la Liberté, Timbuktu, Mali",
     "description": "The iconic clock tower has marked the hours in downtown since 1905."
   },
   {
     "title": "Vintage Railway Station",
     "image": "images/train.webp",
-    "address": "202 Rail St, YourCity, State",
+    "address": "Gare Ancienne, Quartier Sankoré, Timbuktu, Mali",
     "description": "Once a hub for travelers, the station now serves as a museum of local rail history."
   },
   {
     "title": "Riverfront Trail",
     "image": "images/Riverfront-Trail.webp",
-    "address": "Riverside Dr, YourCity, State",
+    "address": "Corniche du Niger, Timbuktu, Mali",
     "description": "A scenic walking and biking trail running along the river, great for outdoor exercise and birdwatching."
   },
   {
     "title": "St. Anne's Chapel",
     "image": "images/Anne-chapel.webp",
-    "address": "404 Chapel Rd, YourCity, State",
+    "address": "Rue Sainte-Anne, Timbuktu, Mali",
     "description": "A stone chapel dating back to 1878, still used for community events and weddings."
   },
   {
     "title": "Fort Heritage Site",
     "image": "images/Fort-Heritage.webp",
-    "address": "505 Pioneer Trl, YourCity, State",
+    "address": "Rue des Pionniers, Timbuktu, Mali",
     "description": "Remains of an 18th-century fort that protected early settlers, with guided tours available."
   }
 ]
+
