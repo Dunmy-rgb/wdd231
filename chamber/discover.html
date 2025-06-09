@@ -16,17 +16,19 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"></noscript>
+
 
   <title>Directory | Timbuktu Chamber</title>
-  <link rel="stylesheet" href="styles/home.css" />
+  <!-- <link rel="stylesheet" href="styles/home.css"> -->
   <link rel="stylesheet" href="styles/discover.css">
 </head>
 <body>
   <header>
     <div class="header-container">
       <div class="logo">
-        <img class="h-logo-image" src="images/header-logo.webp" alt="Logo" width="50px" height="auto" loading="lazy">
+        <img class="h-logo-image" src="images/header-logo.webp" alt="Logo" width="50" height="50">
         <div class="logo-text">
           <h2>Timbuktu</h2>
           <span>Chamber of Commerce</span>
@@ -41,16 +43,13 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a class="active" href="directory.html">Directory</a>
-          </li>
-          <li>
             <a href="events.html">Events</a>
           </li>
           <li>
             <a href="join.html">Join</a>
           </li>
           <li>
-            <a class="active" href="directory.html">Directory</a>
+            <a href="directory.html">Directory</a>
           </li>
         </ul>
       </nav>
