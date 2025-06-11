@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Suggest a pixel art game for inclusion in the Pixel Chronicles archive." />
+  <meta name="author" content="Your Name" />
+  <meta property="og:title" content="Pixel Chronicles | Suggest a Game" />
+  <meta property="og:description" content="Use the form to submit your favorite pixel-style games." />
+  <meta property="og:image" content="images/og-image.png" />
+  <meta property="og:type" content="website" />
+  <title>Pixel Chronicles | Suggest</title>
+  <link rel="icon" href="./images/favicon-16x16.webp">
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="cont">
+      <div class="h-logo">
+        <h1>🎮 Pixel Chronicles</h1>
+        <button id="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+      </div>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="feedback.html">Suggest</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Suggest a Pixel Game</h2>
+    <form action="thankyou.html" method="get">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="game">Game Title:</label>
+      <input type="text" id="game" name="game" required />
+
+      <fieldset>
+        <legend>Platform</legend>
+        <label><input type="radio" name="platform" value="PC" required /> PC</label>
+        <label><input type="radio" name="platform" value="Console" /> Console</label>
+        <label><input type="radio" name="platform" value="Mobile" /> Mobile</label>
+      </fieldset>
+
+      <label for="rating">Pixel Art Rating:</label>
+      <select id="rating" name="rating">
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★</option>
+        <option value="3">★★★</option>
+        <option value="2">★★</option>
+        <option value="1">★</option>
+      </select>
+
+      <label for="desc">Why this game?</label>
+      <textarea id="desc" name="desc" rows="4" required></textarea>
+
+      <label><input type="checkbox" name="newsletter" /> Subscribe to newsletter</label>
+
+      <button type="submit">Submit Suggestion</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Pixel Chronicles | <a href="attributions.html">Attributions</a></p>
+    <a href="https://your-video-link.com" target="_blank">Project Demo Video</a>
+  </footer>
+
+  <script type="module" src="scripts/form.js" defer></script>
+
+</body>
+</html>

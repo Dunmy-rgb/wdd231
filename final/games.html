@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse a collection of retro pixel-art games with game details and filters." />
+  <meta name="author" content="Your Name" />
+  <meta property="og:title" content="Pixel Chronicles | Games" />
+  <meta property="og:description" content="Explore a curated list of pixel-style games across all genres." />
+  <meta property="og:image" content="images/og-image.png" />
+  <meta property="og:type" content="website" />
+  <title>Pixel Chronicles | Games</title>
+  <link rel="icon" href="./images/favicon-16x16.webp">
+
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <div class="cont">
+      <div class="h-logo">
+        <h1>🎮 Pixel Chronicles</h1>
+        <button id="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+      </div>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="feedback.html">Suggest</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Game Archive</h2>
+    <div id="filters">
+      <label for="genre">Filter by Genre:</label>
+      <select id="genre">
+        <option value="all">All</option>
+        <option value="rpg">RPG</option>
+        <option value="racing">Racing</option>
+        <option value="strategy">Strategy</option>
+        <option value="stealth action">Stealth Action</option>
+        <option value="sci-fi shooter">Sci-Fi Shooter</option>
+        <option value="simulation">Simulation</option>
+
+      </select>
+    </div>
+
+    <section id="game-list" class="grid">
+      <!-- JS will populate games here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Pixel Chronicles | <a href="attributions.html">Attributions</a></p>
+    <a href="https://your-video-link.com" target="_blank">Project Demo Video</a>
+  </footer>
+
+  <!-- Modal -->
+  <div id="game-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button id="close-modal" aria-label="Close modal">✖</button>
+      <div id="modal-details">
+        <!-- JS inserts game details here -->
+      </div>
+    </div>
+  </div>
+
+  <script  src="scripts/games.js" defer></script>
+
+</body>
+</html>

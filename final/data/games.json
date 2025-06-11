@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Elderfall Legends",
+    "genre": "RPG",
+    "platform": "PC, PS5, Xbox Series X",
+    "description": "An epic fantasy role-playing game with vast open worlds, dynamic combat, and deep lore.",
+    "image": "./images/elderfall.webp",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Sky Drift",
+    "genre": "Racing",
+    "platform": "PC, Switch",
+    "description": "High-speed futuristic racing with gravity-defying tracks and vehicle customization.",
+    "image": "./images/skyfall.webp",
+    "featured": false
+  },
+  {
+    "id": 3,
+    "name": "Pixel Kingdom",
+    "genre": "Strategy",
+    "platform": "PC, Mobile",
+    "description": "Retro-style strategy where you build a kingdom, manage resources, and defend your realm.",
+    "image": "./images/pixel.webp",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "Shadow Protocol",
+    "genre": "Stealth Action",
+    "platform": "PC, PS5",
+    "description": "Infiltrate high-security facilities as an elite agent in this stealth-based action thriller.",
+    "image": "./images/shadow-protocol.webp",
+    "featured": false
+  },
+  {
+    "id": 5,
+    "name": "Nebula Raiders",
+    "genre": "Sci-Fi Shooter",
+    "platform": "PC, Xbox Series X",
+    "description": "Join an intergalactic squad to battle alien forces in this space-based co-op shooter.",
+    "image": "./images/nebula.webp",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Dream light",
+    "genre": "Simulation",
+    "platform": "Switch, PC",
+    "description": "Farm, fish, and build your dream town in this relaxing life simulation game.",
+    "image": "./images/dreamlight.webp",
+    "featured": false
+  }
+]

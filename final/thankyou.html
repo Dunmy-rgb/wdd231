@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You!</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="cont">
+      <div class="h-logo">
+        <h1>🎮 Pixel Chronicles</h1>
+        <button id="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+      </div>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="feedback.html">Suggest</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Thank You for Your Suggestion!</h2>
+    <p>Your submission has been received. Here’s what you shared:</p>
+    <div id="submission-output">
+      <!-- JS will populate form data from URL -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Pixel Chronicles | <a href="attributions.html">Attributions</a></p>
+    <a href="https://your-video-link.com" target="_blank">Project Demo Video</a>
+  </footer>
+
+  <script type="module" src="scripts/form.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pixel Chronicles - Discover classic and modern pixel art games." />
+  <meta name="author" content="Your Name" />
+  <meta property="og:title" content="Pixel Chronicles" />
+  <meta property="og:description" content="Explore a curated list of indie and retro pixel art games." />
+  <meta property="og:image" content="images/og-image.png" />
+  <meta property="og:type" content="website" />
+  <title>Pixel Chronicles | Home</title>
+  <link rel="icon" href="./images/favicon-16x16.webp">
+
+  <link rel="stylesheet" href="styles/styles.css" />
+  
+</head>
+<body>
+  <header>
+    <div class="cont">
+      <div class="h-logo">
+        <h1>🎮 Pixel Chronicles</h1>
+        <button id="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+      </div>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="feedback.html">Suggest</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Relive the Retro. Discover the New.</h2>
+      <p>Explore timeless pixel-art games crafted by indie developers across the globe.</p>
+    </section>
+
+    <section id="featured-game" class="card">
+      <h3>Featured Game</h3>
+      <!-- Populated by JS -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Pixel Chronicles | <a href="attributions.html">Attributions</a></p>
+    <a href="https://your-video-link.com" target="_blank">Project Demo Video</a>
+  </footer>
+
+  <script type="module" src="scripts/main.js" defer></script>
+
+</body>
+</html>
