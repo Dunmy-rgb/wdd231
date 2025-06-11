@@ -1,11 +1,11 @@
 // ========== Responsive Navigation ==========
 const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("main-nav").querySelector("ul");
+const nav = document.getElementById("main-nav");
 
 hamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
+  nav.classList.toggle("open");
+  hamburger.innerHTML = nav.classList.contains("open") ? "✖" : "☰";
 });
-
 
 // ========== Set Active Link ==========
 const currentPage = location.pathname.split("/").pop();

@@ -4,6 +4,15 @@ const modalBody = document.getElementById("modal-details"); // updated to match 
 const closeModal = document.getElementById("close-modal");
 const genreFilter = document.getElementById("genre");
 
+// ========== Responsive Navigation ==========
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("main-nav");
+
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("open");
+  hamburger.innerHTML = nav.classList.contains("open") ? "✖" : "☰";
+});
+
 let allGames = [];
 
 async function loadGames() {

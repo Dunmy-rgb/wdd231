@@ -1,5 +1,13 @@
-const form = document.querySelector("form");
+// ========== Responsive Navigation ==========
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("main-nav");
 
+hamburger.addEventListener("click", () => {
+  nav.classList.toggle("open");
+  hamburger.innerHTML = nav.classList.contains("open") ? "✖" : "☰";
+});
+
+const form = document.querySelector("form");
 
 form?.addEventListener("submit", (e) => {
   e.preventDefault();
