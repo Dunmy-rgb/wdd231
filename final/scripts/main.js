@@ -29,7 +29,7 @@ async function loadFeaturedGame() {
       section.innerHTML = `
         <div class="card">
           <h3>${featured.name}</h3>
-          <img src="${featured.image}" alt="${featured.name}" />
+          <img src="${featured.image}" alt="${featured.name}" width="300" height="200">
           <p>${featured.description}</p>
         </div>
       `;

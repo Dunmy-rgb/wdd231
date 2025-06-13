@@ -6,7 +6,7 @@
   --accent: #ff33b8;
   --btn: #19586d;
   --card-bg: #222;
-  --link: #00e0ff;
+  --link: #00ffff;
   --focus: #ffaa00;
   --font-main: 'Press Start 2P', system-ui, sans-serif;
 }
@@ -29,6 +29,7 @@ html, body {
 a {
   color: var(--link);
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover,
@@ -354,4 +355,22 @@ footer {
   padding: 1rem;
   text-align: center;
   border-bottom: 3px solid var(--accent);
+}
+
+/* Attributions List */
+.attributions-list {
+  list-style-type: square;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.attributions-list a {
+  color: var(--link);
+}
+
+.attributions-list a:hover {
+  color: var(--accent);
+  text-decoration: underline;
 }

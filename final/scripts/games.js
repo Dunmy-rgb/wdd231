@@ -33,7 +33,7 @@ function renderGames(games) {
     const card = document.createElement("div");
     card.classList.add("card");
     card.innerHTML = `
-      <img src="${game.image}" alt="${game.name}" />
+      <img src="${game.image}" alt="${game.name}" width="300" height="200">
       <h3>${game.name}</h3>
       <button data-id="${game.id}">More Info</button>
     `;
